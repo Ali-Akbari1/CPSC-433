@@ -26,6 +26,7 @@ def predict(model, class_names, img, true_label):
     img = np.array([img])
     #Replace these two lines with code to make a prediction
     prediction = model.predict(img)
+    prediction = prediction[0]
     #Determine what the predicted label is
     predicted_label = np.argmax(prediction)
     plot(class_names, prediction, true_label, predicted_label, img[0])
@@ -65,6 +66,7 @@ def check_args():
      return class_names, data
 
 def plot(class_names, prediction, true_label, predicted_label, img):
+    print(prediction)
     plt.figure(figsize=(6,3))
     plt.subplot(1,2,1)
     plt.grid(False)
