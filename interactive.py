@@ -1,4 +1,5 @@
 #CPSC 433 F24
+#Ali Akbari UCID: 30171539
 
 import sys
 import tensorflow as tf
@@ -30,7 +31,7 @@ def check_args():
         if input("Y for MNIST, otherwise notMNIST:") == "Y":
              sys.argv = ["interactive.py", "MNIST", "MNIST.keras"]
         else:
-             sys.argv = ["interactive.py", "notMNIST", "notMNIST-Partial.keras"]
+             sys.argv = ["interactive.py", "notMNIST", "notMNIST-Complete.keras"]
      if(len(sys.argv) != 3):
           print("Usage python interactive.py <MNIST,notMNIST> <model.keras>")
           sys.exit(1)
