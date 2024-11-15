@@ -33,7 +33,7 @@ def predict(model, class_names, img, true_label):
 def check_args():
      if(len(sys.argv) == 1):
          print("No arguments so using defaults")
-         sys.argv = ["predict.py", "MNIST", "MNIST.keras", "image.png", input("Predict the class of image.png(index):")]
+         sys.argv = ["predict.py", "MNIST", "notMNIST-Complete.keras", "Figure_1.png", input("Predict the class of image.png(index):")]
      if(len(sys.argv) != 5):
           print("Usage python predict.py <MNIST,notMNIST> <model.keras> <image.png> <prediction class index>")
           sys.exit(1)
